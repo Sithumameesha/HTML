@@ -2,42 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hyper text markup language</title>
+    <title>HyperText Markup Language</title>
+    <link href="favicon.png" rel="icon">
+    <!--    <base href="localhost">-->
+    <meta content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML" name="keywords">
+    <meta content="This is a demonstration for GDSE students for learning HTML" name="description">
+    <meta content="Institute of Software Engineering" name="author">
+    <meta content="IJSE" name="owner">
+    <meta content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no" name="viewport">
+    <meta content="green" name="theme-color">
 </head>
 <body>
-<h1>Form</h1>
+<h1>How to create a Forms</h1>
 <hr>
-<form action="gedra">
+<!--action--><!--actual location which we wanted to send the form data-->
+<form action="gedara" method="post" id="cusForm">
     <fieldset>
         <legend>Customer Form</legend>
-        <label for="txtCusId" >Customer Id</label>
-        <input type="text" id="txtCusId" name="customerid" placeholder="Ex: C001" required>
-        <br>
-        <br>
-        <label for="txtCusName">Customer Name</label>
-        <input type="text" id="txtCusName" placeholder="Ex: Sithum" required>
-        <br>
-        <br>
-        <label for="txtCusAddress" >Customer Address</label>
-        <input type="text" id="txtCusAddress" placeholder="Ex: Galle" required>
-        <br>
-        <br>
-        <label for="txtCusSalary">Customer Salary</label>
-        <input type="number" id="txtCusSalary">
-        <br>
-        <br>
-        <label for="txtCusbd">Customer Birthday</label>
-        <input type="date" id="txtCusbd">
-        <br>
-        <br>
-        <label>User Correct</label>
-        <input type="checkbox"value="Accepted">
+
+        <label for="txtCusID">Customer ID</label>
+        <input type="text" id="txtCusID" name="customerid" placeholder="C001" required pattern="(C)[0-9]{3}">
         <br>
         <br>
 
+        <label for="txtCusName">Customer Name</label>
+        <input type="text" id="txtCusName" name="customername" placeholder="Ex: Ranjith" required disabled>
+        <br>
+        <br>
+
+        <label for="txtCusAddress">Customer Address</label>
+        <input type="text" id="txtCusAddress" name="customeraddress" placeholder="No 16, Panadura" required value="No 17" readonly>
+        <br>
+        <br>
+        <label for="selectCourse">Select Course</label>
+        <select name="selectCourse" id="selectCourse" >
+        <option>GDSE</option>
+        <option>CMJD</option>
+        <option>Dep</option>
+        <option>RMAD</option>
+        </select>
+
+        <label for="txtCusBday">Customer BDay</label>
+        <input type="date" id="txtCusBday" name="cusbday" required>
+        <br>
+        <br>
+
+        <label for="txtCusSalary">Customer Salary</label>
+        <input type="number" id="txtCusSalary" name="customersalary" placeholder="1000,00" required>
+        <br>
+        <br>
+
+        <label for="txtGenderMale">Male</label>
+        <input type="radio" id="txtGenderMale" name="gender" value="Male" required >
+        <label for="txtGenderFemale">Female</label>
+        <input type="radio"  id="txtGenderFemale" name="gender" value="Female" required >
+        <br>
+        <br>
+
+        <label for="txtCusEmail">Your Email</label>
+        <input type="email" id="txtCusEmail" name="cusemail" required>
+        <br>
+        <br>
+
+        <label for="txtCusPhoto">Your Photo</label>
+        <input type="file" id="txtCusPhoto" name="cusPhoto" required>
+        <br>
+        <br>
+
+        <label for="txtCusTel">Your TP</label>
+        <input type="tel" id="txtCusTel" name="cusTel" required>
+        <br>
+        <br>
+
+        <label for="txtCusColorTone">Your Color Tone</label>
+        <input type="color" id="txtCusColorTone" name="cusColor" required>
+        <br>
+        <br>
+
+        <label for="txtEngFlu">English Fluency</label>
+        <input type="range" min="0" max="100" id="txtEngFlu" name="cusLanguageFluency" required>
+        <br>
+        <br>
+
+        <!-- Text area -->
+        <label for="txtopinion">Your opinion</label>
+        <textarea name="myOpinion" id="txtopinion" cols="100" rows="10">
+
+        </textarea>
+        <br>
+        <br>
+
+
+        <label for="txtTextBox">Accept terms and conditions</label>
+        <input type="checkbox" id="txtTextBox"  name="option" value="Accepted" required >
+        <br>
+        <br>
+
+        <!--button types-->
+        <input type="reset">
         <button>Save Customer</button>
+        <button type="reset">Reset Customer</button>
+        <button type="button">Delete Customer</button>
     </fieldset>
 </form>
+<br>
+<br>
+<hr>
+<br>
+<button form="cusForm" formaction="saveCustomer" formmethod="post" formtarget="_blank">Save Customer</button>
+<button form="cusForm" formaction="updateCustomer" formmethod="get">Update Customer</button>
+<button form="cusForm" formaction="deleteCustomer" formmethod="post">Delete Customer</button>
+
 
 </body>
 </html>
