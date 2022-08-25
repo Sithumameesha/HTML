@@ -66,8 +66,27 @@ background-color: pink;
   right: 0px;
   bottom: 0px;
 }
+main>section{
+  position: relative;
+}
 
-.dives{
+.div1{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+
+}
+.small_div{
   height: 50px;
   width: 50px;
   position: absolute;
@@ -76,28 +95,68 @@ background-color: pink;
   top: 0px;
   bottom: 0px;
   margin: auto;
-  background-color: white;
+  background-color: red;
+}
+.small_div2{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: green;
+}
+.small_div3{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: yellow;
+
+}
+.small_div4{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  background-color: pink;
+
 }
 
 
   </style>
 </head>
 <body>
-<div  class="dives">
-
-</div>
 <main>
   <section>
-    <div></div>
+    <div class="div1">
+<div class="small_div"></div>
+    </div>
   </section>
   <section>
-    <div></div>
+    <div  class="div1">
+      <div class="small_div2"></div>
+    </div>
   </section>
   <section>
-    <div></div>
+    <div  class="div1">
+      <div class="small_div3"></div>
+    </div>
   </section>
   <section>
-    <div></div>
+    <div  class="div1">
+      <div class="small_div4"></div>
+    </div>
   </section>
 </main>
 </body>
