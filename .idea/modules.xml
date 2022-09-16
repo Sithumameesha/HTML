@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Baisc.iml" filepath="$PROJECT_DIR$/.idea/Baisc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Scripit/Java Scripit.iml" filepath="$PROJECT_DIR$/Java Scripit/Java Scripit.iml" />
     </modules>
   </component>
 </project>
